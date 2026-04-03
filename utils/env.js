@@ -2,7 +2,6 @@ let BASE_API = '' //请求前缀
 let HOST = '' //域名
 
 if (process.env.NODE_ENV === 'development') {
-	//http://mashang.eicp.vip:5555/ms_stu_pro297
 	HOST = "http://localhost:11297"
 	BASE_API = ""
 }
