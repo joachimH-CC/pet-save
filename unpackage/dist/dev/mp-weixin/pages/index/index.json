@@ -1,0 +1,28 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#597dc9",
+  "usingComponents": {
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "u-row": "/node-modules/uview-ui/components/u-row/u-row",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-subsection": "/node-modules/uview-ui/components/u-subsection/u-subsection",
+    "u-list": "/node-modules/uview-ui/components/u-list/u-list",
+    "u-list-item": "/node-modules/uview-ui/components/u-list-item/u-list-item",
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "u-checkbox-group": "/node-modules/uview-ui/components/u-checkbox-group/u-checkbox-group",
+    "u-checkbox": "/node-modules/uview-ui/components/u-checkbox/u-checkbox",
+    "u-back-top": "/node-modules/uview-ui/components/u-back-top/u-back-top",
+    "custom-tab-bar": "/components/CustomTabBar"
+  }
+}

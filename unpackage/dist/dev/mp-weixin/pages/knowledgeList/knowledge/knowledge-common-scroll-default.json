@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "knowledge-common-scroll-default": "/pages/knowledgeList/knowledge/knowledge-common-scroll-default",
+    "knowledge-common-scroll-default1": "/pages/knowledgeList/knowledge/knowledge-common-scroll-default1",
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-line-progress": "/node-modules/uview-ui/components/u-line-progress/u-line-progress",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-subsection": "/node-modules/uview-ui/components/u-subsection/u-subsection",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "common-scroll": "/components/CommonScrollList"
+  }
+}

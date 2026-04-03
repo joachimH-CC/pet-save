@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "消息中心",
+  "usingComponents": {
+    "info-common-scroll-list-default": "/pages/info/info-common-scroll-list-default",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-avatar": "/node-modules/uview-ui/components/u-avatar/u-avatar",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "custom-tab-bar": "/components/CustomTabBar",
+    "common-scroll-list": "/components/CommonScrollList"
+  }
+}

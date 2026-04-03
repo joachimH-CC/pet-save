@@ -1,0 +1,9 @@
+{
+  "componentGenerics": {
+    "scoped-slots-default": true
+  },
+  "component": true,
+  "usingComponents": {
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

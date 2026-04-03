@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "编辑帖子",
+  "usingComponents": {
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-picker": "/node-modules/uview-ui/components/u-picker/u-picker",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item",
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image"
+  }
+}

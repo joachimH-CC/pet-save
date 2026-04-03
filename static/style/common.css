@@ -1,0 +1,23 @@
+.content {
+	height: calc(100vh-200rpx);
+	padding: 30rpx;
+}
+
+.just-space-be {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flex-jus-center {
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,273 @@
+{
+	"globalStyle": { // 全局配置
+		"scrollIndicator": "none", // 不显示滚动条
+		"app-plus": {
+			"scrollIndicator": "none" // 在APP平台都不显示滚动条
+		}
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#597dc9"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "宠援小程序登录"
+
+			}
+		},
+
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "领养社区"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/info/info",
+			"style": {
+				"navigationBarTitleText": "消息中心"
+			}
+		}
+
+	],
+	//分包
+	"subPackages": [{
+		"root": "pages/petDetailList", //子包目录
+		"pages": [{
+				"path": "petDetail/petDetail",
+				"style": {
+					"navigationBarTitleText": "宠物详情",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "petAdopt/petAdopt",
+				"style": {
+					"navigationBarTitleText": "领养申请"
+				}
+			}
+		]
+	}, {
+		"root": "pages/postList", //子包目录
+		"pages": [{
+				"path": "postDetail/postDetail",
+				"style": {
+					"navigationBarTitleText": "帖子详情"
+
+				}
+			},
+			{
+				"path": "editPost/editPost",
+				"style": {
+					"navigationBarTitleText": "编辑帖子"
+				}
+			}
+		]
+	}, {
+		"root": "pages/knowledgeList", //子包目录
+		"pages": [{
+				"path": "knowledge/knowledge",
+				"style": {
+					"navigationBarTitleText": "知识学习",
+					"navigationBarBackgroundColor": "#f8f9fa"
+				}
+			},
+			{
+				"path": "petLesson/petLesson",
+				"style": {
+					"navigationBarTitleText": "领养课堂"
+					// "navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "petTest/petTest",
+				"style": {
+					"navigationBarTitleText": "知识测试",
+					"navigationBarBackgroundColor": "#f8f9fa"
+				}
+			}
+		]
+	}, {
+		"root": "pages/matchList", //子包目录
+		"pages": [{
+				"path": "aiMatch/aiMatch",
+				"style": {
+					"navigationBarTitleText": "AI智能匹配",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "matchPetList/matchPetList",
+				"style": {
+					"navigationBarTitleText": "智能匹配宠物列表"
+
+				}
+			}
+		]
+	}, {
+		"root": "pages/saverApplyList", //子包目录
+		"pages": [{
+				"path": "applyList/applyList",
+				"style": {
+					"navigationBarTitleText": "领养申请审核"
+				}
+			},
+			{
+				"path": "applyDetail/applyDetail",
+				"style": {
+					"navigationBarTitleText": "领养申请详情"
+
+
+				}
+			},
+			{
+				"path": "contract/contract",
+				"style": {
+					"navigationBarTitleText": "合同签订"
+				}
+			}
+		]
+	}, {
+		"root": "pages/saverIndexList", //子包目录
+		"pages": [{
+				"path": "petCare/petCare",
+				"style": {
+					"navigationBarTitleText": "护理记录"
+
+				}
+			},
+			{
+				"path": "editPet/editPet",
+				"style": {
+					"navigationBarTitleText": "编辑宠物",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			}
+		]
+	}, {
+		"root": "pages/infoList", //子包目录
+		"pages": [{
+				"path": "infoList/infoList",
+				"style": {
+					"navigationBarTitleText": "消息列表"
+				}
+			},
+			{
+				"path": "chat/chat",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "聊天"
+
+				}
+			}
+		]
+	}, {
+		"root": "pages/userList", //子包目录
+		"pages": [{
+				"path": "personInfo/personInfo",
+				"style": {
+					"navigationBarTitleText": "个人资料",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "identify/identify",
+				"style": {
+					"navigationBarTitleText": "实名认证",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "myCollect/myCollect",
+				"style": {
+					"navigationBarTitleText": "我的收藏"
+				}
+			},
+			{
+				"path": "myPost/myPost",
+				"style": {
+					"navigationBarTitleText": "我的帖子"
+
+				}
+			},
+			{
+				"path": "myAdopt/myAdopt",
+				"style": {
+					"navigationBarTitleText": "我的领养",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "myQuestion/myQuestion",
+				"style": {
+					"navigationBarTitleText": "疑问与反馈",
+					"navigationBarBackgroundColor": "#f4f4f5"
+				}
+			},
+			{
+				"path": "adoptDetail/adoptDetail",
+				"style": {
+					"navigationBarTitleText": "领养申请详情"
+				}
+			},
+			{
+				"path": "visitList/visitList",
+				"style": {
+					"navigationBarTitleText": "领养回访跟踪"
+				}
+			},
+
+			{
+				"path": "visitDetail/visitDetail",
+				"style": {
+					"navigationBarTitleText": "回访记录"
+
+				}
+			},
+			{
+				"path": "editVisit/editVisit",
+				"style": {
+					"navigationBarTitleText": "编辑回访记录"
+				}
+			}
+		]
+	}],
+	"tabBar": {
+		"custom": true, //自定义组件
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/community/community",
+			"text": "社区"
+		}, {
+			"pagePath": "pages/info/info",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/user/user",
+			"text": "我的"
+		}]
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

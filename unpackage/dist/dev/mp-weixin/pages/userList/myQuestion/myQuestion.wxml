@@ -1,0 +1,55 @@
+<view class="question content"><view class="question-container"><u--form vue-id="70195938-1" model="{{form}}" labelStyle="{{({fontSize:'30rpx'})}}" labelWidth="70" bind:__l="__l" vue-slots="{{['default']}}"><u-form-item vue-id="{{('70195938-2')+','+('70195938-1')}}" bind:__l="__l" vue-slots="{{['default']}}"><u--text vue-id="{{('70195938-3')+','+('70195938-2')}}" margin="6rpx 0 16rpx 0" text="问题描述:" size="15" bold="{{true}}" color="#7e7f86" bind:__l="__l"></u--text><u--textarea bind:input="__e" vue-id="{{('70195938-4')+','+('70195938-2')}}" border="none" maxlength="-1" placeholder="请输入描述您遇到的问题或建议,我们会尽快给您处理!" value="{{form.questionContent}}" data-event-opts="{{[['^input',[['__set_model',['$0','questionContent','$event',[]],['form']]]]]}}" bind:__l="__l"></u--textarea></u-form-item><u-form-item vue-id="{{('70195938-5')+','+('70195938-1')}}" bind:__l="__l" vue-slots="{{['default']}}"><u-button vue-id="{{('70195938-6')+','+('70195938-5')}}" text="提交" color="#6887cb" data-event-opts="{{[['^click',[['confirmQuestion']]]]}}" bind:click="__e" bind:__l="__l"></u-button></u-form-item></u--form></view><view class="common-question"><u--text vue-id="70195938-7" margin="6rpx 0 16rpx 0" text="常见问题" size="15" bold="{{true}}" color="#7e7f86" bind:__l="__l"></u--text><u-collapse vue-id="70195938-8" border="{{false}}" bind:__l="__l" vue-slots="{{['default']}}"><u-collapse-item vue-id="{{('70195938-9')+','+('70195938-8')}}" title="如何申请领养宠物?" name="1" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">1.筛选动物： 根据你的需要条件（体型、性格、年龄）筛选心仪的宠物。
+
+					2.提交申请： 填写详细的申请表，包括居住情况、养宠经验等。
+
+					3.审核与面谈： 工作人员会审核你的申请，可能进行电话或当面访谈。
+
+					4.见面互动： 安排你和心仪宠物见面，看彼此是否合适。
+
+					5.家访： 部分机构可能会要求家访，以确保环境安全。
+
+					6.签署协议并缴费： 完成领养协议，支付领养费（这是对机构救助成本的捐助）。
+
+					7.接宠物回家： 准备妥当后，就可以迎接新成员了！</text></u-collapse-item><u-collapse-item vue-id="{{('70195938-10')+','+('70195938-8')}}" title="为什么我的领养申请被拒绝了?" name="2" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">领养申请被拒绝可能包括多个方面的原因,您可以先问问自己几个问题
+
+					1.时间： 你每天有足够的时间陪伴、散步和清理吗？
+
+					2.经济： 你能负担食物、疫苗、绝育、日常用品以及突发疾病的医疗费用吗？
+
+					3.空间： 你的居住环境允许养宠物吗？房东或家人同意吗？
+
+					4.责任： 宠物是长达10-20年的承诺，你能负责它的一生吗？未来生活变化（如搬家、结婚、生子）你会如何安置它？</text></u-collapse-item><u-collapse-item vue-id="{{('70195938-11')+','+('70195938-8')}}" title="领养需要宠物哪些条件?" name="3" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">当您准备去申请时，请确保您已经满足或准备好了以下核心几点：
+
+					✅ 年满22周岁，有完全民事行为能力。
+
+					✅ 有稳定的经济收入和住房（如果是租房，必须有房东许可证明）。
+
+					✅ 所有家庭成员一致同意领养。
+
+					✅ 承诺办理狗证（如需要）、科学喂养、不离不弃。
+
+					✅ 承诺为宠物提供 终身 的照顾和关爱，包括生病年老时。
+
+					✅ 同意接受绝育、免疫和驱虫的原则，并签署领养协议。
+
+					✅ 愿意接受机构的审核、家访和回访。</text></u-collapse-item><u-collapse-item vue-id="{{('70195938-12')+','+('70195938-8')}}" title="领养和购买宠物有什么区别？" name="4" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">领养是给收容所或救助中心里无家可归的动物一个第二次生命的机会，是一种慈善行为。通常费用较低（已含绝育、疫苗、驱虫等），并能缓解收容所的压力。购买则是从繁殖者或宠物店获得动物，需要选择信誉良好的商家以避免支持不良繁殖场</text></u-collapse-item><u-collapse-item vue-id="{{('70195938-13')+','+('70195938-8')}}" title=" 领养费用包括什么？" name="5" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">领养费远低于实际成本，通常包括：
+
+					兽医健康检查
+
+					核心疫苗接种
+
+					体内外驱虫
+
+					绝育/绝育手术
+
+					微型芯片植入（部分地区）
+
+					有时还包括初步的培训或行为评估。</text></u-collapse-item><u-collapse-item vue-id="{{('70195938-14')+','+('70195938-8')}}" title=" 如何帮助新宠物适应家庭？" name="6" bind:__l="__l" vue-slots="{{['default']}}"><text class="u-collapse-content">1.保持耐心： 给它几天到几周的时间来适应新环境。
+
+					2.准备安全空间： 为它准备一个安静、舒适的专属区域（如笼子、猫窝）。
+
+					3.逐步介绍： 慢慢地将它介绍给家人和其他宠物。
+
+					4.建立规律： 固定的喂食、散步和玩耍时间会让它更有安全感。
+
+					5.正面引导： 使用奖励和鼓励的方式进行训练，避免惩罚。</text></u-collapse-item></u-collapse></view><view class="history-question"><u--text vue-id="70195938-15" margin="6rpx 0 16rpx 0" text="历史反馈" size="15" bold="{{true}}" color="#7e7f86" bind:__l="__l"></u--text><u-collapse vue-id="70195938-16" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index"><u-collapse-item vue-id="{{('70195938-17-'+index)+','+('70195938-16')}}" title="{{item.$orig.questionContent}}" name="{{index}}" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{item.$orig.answers}}" wx:for-item="answer" wx:for-index="i" wx:key="i"><block wx:if="{{item.g0>0}}"><view><u--text vue-id="{{('70195938-18-'+index+'-'+i)+','+('70195938-17-'+index)}}" margin="6rpx 0 16rpx 0" text="官方回复:" size="12" bold="{{true}}" color="#7e7f86" bind:__l="__l"></u--text><text class="u-collapse-content">{{answer.answerContent}}</text><u--text vue-id="{{('70195938-19-'+index+'-'+i)+','+('70195938-17-'+index)}}" margin="10rpx 0 6rpx 0" text="{{answer.createTime}}" size="11" color="#7e7f86" bind:__l="__l"></u--text></view></block></block><block wx:if="{{item.g1==0}}"><view><u--text vue-id="{{('70195938-20-'+index)+','+('70195938-17-'+index)}}" margin="6rpx 0 16rpx 0" text="请耐心等待,很快就能得到回复^_^" size="12" bold="{{true}}" color="#7e7f86" bind:__l="__l"></u--text></view></block></u-collapse-item></block></u-collapse><block wx:if="{{$root.g2==0}}"><view><u-empty vue-id="70195938-21" mode="list" text="还没有反馈..." bind:__l="__l"></u-empty></view></block></view></view>

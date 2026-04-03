@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "领养申请审核",
+  "usingComponents": {
+    "applyList-common-scroll-list-default": "/pages/saverApplyList/applyList/applyList-common-scroll-list-default",
+    "u-subsection": "/node-modules/uview-ui/components/u-subsection/u-subsection",
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea",
+    "common-scroll-list": "/components/CommonScrollList"
+  }
+}

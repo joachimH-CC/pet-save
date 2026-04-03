@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "领养课堂",
+  "usingComponents": {
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text"
+  }
+}

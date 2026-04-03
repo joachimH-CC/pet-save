@@ -1,0 +1,105 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/community/community",
+    "pages/user/user",
+    "pages/info/info"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/petDetailList",
+      "pages": [
+        "petDetail/petDetail",
+        "petAdopt/petAdopt"
+      ]
+    },
+    {
+      "root": "pages/postList",
+      "pages": [
+        "postDetail/postDetail",
+        "editPost/editPost"
+      ]
+    },
+    {
+      "root": "pages/knowledgeList",
+      "pages": [
+        "knowledge/knowledge",
+        "petLesson/petLesson",
+        "petTest/petTest"
+      ]
+    },
+    {
+      "root": "pages/matchList",
+      "pages": [
+        "aiMatch/aiMatch",
+        "matchPetList/matchPetList"
+      ]
+    },
+    {
+      "root": "pages/saverApplyList",
+      "pages": [
+        "applyList/applyList",
+        "applyDetail/applyDetail",
+        "contract/contract"
+      ]
+    },
+    {
+      "root": "pages/saverIndexList",
+      "pages": [
+        "petCare/petCare",
+        "editPet/editPet"
+      ]
+    },
+    {
+      "root": "pages/infoList",
+      "pages": [
+        "infoList/infoList",
+        "chat/chat"
+      ]
+    },
+    {
+      "root": "pages/userList",
+      "pages": [
+        "personInfo/personInfo",
+        "identify/identify",
+        "myCollect/myCollect",
+        "myPost/myPost",
+        "myAdopt/myAdopt",
+        "myQuestion/myQuestion",
+        "adoptDetail/adoptDetail",
+        "visitList/visitList",
+        "visitDetail/visitDetail",
+        "editVisit/editVisit"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

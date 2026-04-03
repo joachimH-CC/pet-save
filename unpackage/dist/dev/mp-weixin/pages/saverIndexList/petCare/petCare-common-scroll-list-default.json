@@ -1,0 +1,19 @@
+{
+  "component": true,
+  "usingComponents": {
+    "petCare-common-scroll-list-default": "/pages/saverIndexList/petCare/petCare-common-scroll-list-default",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-number-box": "/node-modules/uview-ui/components/u-number-box/u-number-box",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea",
+    "common-scroll-list": "/components/CommonScrollList"
+  }
+}

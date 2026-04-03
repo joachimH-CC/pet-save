@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "编辑宠物",
+  "navigationBarBackgroundColor": "#f4f4f5",
+  "usingComponents": {
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-picker": "/node-modules/uview-ui/components/u-picker/u-picker",
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item",
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea"
+  }
+}

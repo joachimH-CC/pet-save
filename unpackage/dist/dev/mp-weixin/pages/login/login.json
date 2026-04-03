@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "宠援小程序登录",
+  "usingComponents": {
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-row": "/node-modules/uview-ui/components/u-row/u-row",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

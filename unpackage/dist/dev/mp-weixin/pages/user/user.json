@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-cell-group": "/node-modules/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/node-modules/uview-ui/components/u-cell/u-cell",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "custom-tab-bar": "/components/CustomTabBar"
+  }
+}
