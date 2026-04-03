@@ -1,96 +1,96 @@
-# 🐾 Pet-Save - Pet Adoption & Rescue Platform
+# 🐾 Pet-Save - 宠物领养与救助平台
 
-A comprehensive uni-app based platform designed to optimize pet adoption and rescue efficiency through intelligent matching, community engagement, and seamless digital workflows.
+一个基于 uni-app 的综合性平台，通过智能匹配、社区互动和无缝数字化工作流，优化宠物领养和救助效率。
 
-## ✨ Key Features
+## ✨ 核心功能
 
-### Core Functionality
-- **🔍 Pet Browse & Filter** - Comprehensive pet catalog with advanced filtering capabilities
-- **📝 Adoption Application** - Streamlined adoption process with digital forms
-- **💬 Real-time Chat** - WebSocket-based instant messaging between adopters and rescuers
-- **📜 E-signature Contracts** - Electronic contract signing for adoption agreements
-- **🤖 AI Smart Matching** - Intelligent pet-to-adopter matching based on preferences
-- **📊 Data Visualization** - Analytics dashboard for adoption metrics
-- **🏥 Care Records** - Pet healthcare tracking (feeding, vaccines, medical history)
-- **📱 Community** - Social platform for pet knowledge sharing
-- **🔔 Message Center** - Unified notifications for adoption status
+### 主要功能
+- **🔍 宠物浏览与筛选** - 提供全面的宠物目录，支持高级筛选功能
+- **📝 领养申请** - 简化领养流程，支持数字化表单
+- **💬 实时聊天** - 基于 WebSocket 的即时通讯，连接领养者与救助人员
+- **📜 电子签名合同** - 领养协议的电子合同签署
+- **🤖 AI 智能匹配** - 基于偏好的智能宠物与领养者匹配
+- **📊 数据可视化** - 领养指标分析仪表板
+- **🏥 护理记录** - 宠物健康跟踪（喂食、疫苗、病历）
+- **📱 社区** - 宠物知识分享社交平台
+- **🔔 消息中心** - 领养状态统一通知
 
-## 🏗️ Technology Stack
-- **Framework**: uni-app (Vue 2.x)
-- **UI Library**: uView 2.0
-- **State Management**: Vuex
-- **Real-time Communication**: WebSocket with auto-reconnect
-- **HTTP Client**: Custom wrapper with interceptors
-- **Storage**: uni.setStorageSync (Local Storage)
-- **Supported Platforms**: iOS, Android, WeChat Mini Program, Web (H5)
+## 🏗️ 技术栈
+- **框架**: uni-app（Vue 2.x）
+- **UI 库**: uView 2.0
+- **状态管理**: Vuex
+- **实时通信**: WebSocket（支持自动重连）
+- **HTTP 客户端**: 自定义封装（含拦截器）
+- **存储**: uni.setStorageSync（本地存储）
+- **支持平台**: iOS、Android、微信小程序、Web（H5）
 
-## 📁 Project Structure
+## 📁 项目结构
 ```
 pet-save/
-├── pages/                    # Application pages
-│   ├── index/               # Home page
-│   ├── login/              # Login page
-│   ├── community/          # Community posts
-│   ├── info/               # Message center
-│   ├── user/               # User profile
-│   └── [sub-packages]/     # Feature modules
-├── utils/                   # Utility functions
-│   ├── auth.js             # Token management
-│   ├── env.js              # Environment config
-│   ├── request.js          # HTTP wrapper
-│   └── websocket.js        # WebSocket client
-├── store/                   # Vuex store (state management)
-├── interceptor/             # Route & request guards
-├── App.vue                  # Root component
-└── main.js                  # Application entry point
+├── pages/                    # 应用页面
+│   ├── index/               # 首页
+│   ├── login/              # 登录页
+│   ├── community/          # 社区帖子
+│   ├── info/               # 消息中心
+│   ├── user/               # 用户中心
+│   └── [sub-packages]/     # 功能模块
+├── utils/                   # 工具函数
+│   ├── auth.js             # Token 管理
+│   ├── env.js              # 环境配置
+│   ├── request.js          # HTTP 封装
+│   └── websocket.js        # WebSocket 客户端
+├── store/                   # Vuex 状态管理
+├── interceptor/             # 路由与请求守卫
+├── App.vue                  # 根组件
+└── main.js                  # 应用入口
 ```
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### Prerequisites
+### 前置条件
 - Node.js >= 12.0
-- npm or yarn
-- HBuilderX or CLI environment
+- npm 或 yarn
+- HBuilderX 或 CLI 环境
 
-### Installation
+### 安装
 ```bash
 git clone https://github.com/joachimH-CC/pet-save.git
 cd pet-save
 npm install
 ```
 
-### Development
+### 开发
 ```bash
-# Run with HBuilderX or
+# 使用 HBuilderX 运行，或执行
 npm run dev
 
-# Build for production
+# 构建生产版本
 npm run build
 ```
 
-### Configuration
-Update `utils/env.js` with your backend API endpoint:
+### 配置
+在 `utils/env.js` 中更新后端 API 地址：
 ```javascript
 if (process.env.NODE_ENV === 'development') {
   HOST = "http://localhost:11297"
 }
 ```
 
-## 🔐 Authentication System
+## 🔐 身份验证系统
 
-Token-based authentication with automatic management:
+基于 Token 的身份验证，支持自动管理：
 ```javascript
 import { setToken, getToken, removeToken, hasToken } from '@/utils/auth.js'
 
-setToken(token)           // Store token
-const token = getToken()  // Retrieve token
-removeToken()             // Clear on logout
-hasToken()                // Check authentication
+setToken(token)           // 存储 Token
+const token = getToken()  // 获取 Token
+removeToken()             // 登出时清除
+hasToken()                // 检查登录状态
 ```
 
-## 💬 Real-time Chat with WebSocket
+## 💬 WebSocket 实时聊天
 
-Robust WebSocket implementation with auto-reconnect:
+健壮的 WebSocket 实现，支持自动重连：
 ```javascript
 import WebSocketClient from '@/utils/websocket.js'
 
@@ -104,15 +104,15 @@ ws.send({ type: 'chat', content: 'Hello' })
 ws.close()
 ```
 
-Features:
-- Auto-reconnection with exponential backoff
-- Message queue for offline mode
-- Token-based authentication
-- Connection status tracking
+功能特性：
+- 带指数退避的自动重连
+- 离线模式消息队列
+- 基于 Token 的身份验证
+- 连接状态追踪
 
-## 📡 HTTP Request Wrapper
+## 📡 HTTP 请求封装
 
-Custom HTTP client with automatic token injection:
+自定义 HTTP 客户端，支持自动注入 Token：
 ```javascript
 import http from '@/utils/request.js'
 
@@ -120,29 +120,29 @@ http({
   url: '/api/pets',
   method: 'GET',
   data: {},
-  isToken: true  // Auto-inject Authorization header
+  isToken: true  // 自动注入 Authorization 请求头
 }).then(res => {
-  // Handle success
+  // 处理成功
 }).catch(err => {
-  // Handle error
+  // 处理错误
 })
 ```
 
-Features:
-- Automatic token injection
-- 401 error handling (auto-redirect to login)
-- Global error notifications
-- Response status code validation
+功能特性：
+- 自动注入 Token
+- 401 错误处理（自动跳转登录页）
+- 全局错误通知
+- 响应状态码校验
 
-## 🎮 State Management (Vuex)
+## 🎮 状态管理（Vuex）
 
-Global state includes:
-- `roleId` - User role (0-1: adopter, 2: rescue org)
-- `petSize` - Pet size categories (small, medium, large)
-- `nurseType` - Care types (feeding, medication, vaccination, etc.)
-- `isAiMatch` - AI matching preference flag
+全局状态包括：
+- `roleId` - 用户角色（0-1：领养者，2：救助机构）
+- `petSize` - 宠物体型分类（小型、中型、大型）
+- `nurseType` - 护理类型（喂食、换药、注射疫苗等）
+- `isAiMatch` - AI 匹配偏好标志
 
-Usage:
+使用方式：
 ```javascript
 import store from '@/store/index.js'
 
@@ -150,84 +150,84 @@ store.commit('setRole', roleId)
 store.dispatch('initRole')
 ```
 
-## 🛡️ Route Protection
+## 🛡️ 路由保护
 
-Navigation guards ensure unauthenticated users cannot access protected pages:
-- **Whitelist Pages**: `/pages/login/login`, `/pages/index/index`
-- **Protected Pages**: Require valid token; auto-redirect to login
-- **Interceptors**: Applied to `navigateTo` and `switchTab`
+导航守卫确保未认证用户无法访问受保护页面：
+- **白名单页面**: `/pages/login/login`、`/pages/index/index`
+- **受保护页面**: 需要有效 Token，否则自动跳转登录
+- **拦截器**: 应用于 `navigateTo` 和 `switchTab`
 
-## 📊 Data Models
+## 📊 数据模型
 
-### Role Types
-- 0-1: Adopter / General User
-- 2: Rescue Organization
+### 角色类型
+- 0-1：领养者 / 普通用户
+- 2：救助机构
 
-### Pet Care Types
-- 0: Feeding (喂食)
-- 1: Medication (换药)
-- 2: Vaccination (注射疫苗)
-- 3: Deworming (驱虫)
-- 4: Sterilization (绝育)
-- 5: Other (其他)
+### 宠物护理类型
+- 0: 喂食
+- 1: 换药
+- 2: 注射疫苗
+- 3: 驱虫
+- 4: 绝育
+- 5: 其他
 
-### Pet Sizes
-- 0: Small (小型)
-- 1: Medium (中型)
-- 2: Large (大型)
+### 宠物体型
+- 0: 小型
+- 1: 中型
+- 2: 大型
 
-## 🔗 API Integration
+## 🔗 API 集成
 
-Backend API endpoints (configurable in `utils/env.js`):
-- `/api/auth/*` - Authentication & login
-- `/api/pets/*` - Pet management
-- `/api/adoption/*` - Adoption applications
-- `/api/posts/*` - Community posts
-- `/api/messages/*` - Messaging
-- `/ws/*` - WebSocket endpoints
+后端 API 地址（可在 `utils/env.js` 中配置）：
+- `/api/auth/*` - 身份验证与登录
+- `/api/pets/*` - 宠物管理
+- `/api/adoption/*` - 领养申请
+- `/api/posts/*` - 社区帖子
+- `/api/messages/*` - 消息通讯
+- `/ws/*` - WebSocket 接口
 
-## 📝 File Descriptions
+## 📝 文件说明
 
-| File | Purpose |
+| 文件 | 用途 |
 |------|---------|
-| `utils/auth.js` | Token storage and retrieval |
-| `utils/env.js` | Environment and API configuration |
-| `utils/request.js` | HTTP client with interceptors |
-| `utils/websocket.js` | WebSocket client with reconnect logic |
-| `store/index.js` | Vuex store for global state |
-| `interceptor/routerInter.js` | Navigation guards |
-| `pages.json` | Route configuration and subpackages |
-| `manifest.json` | App metadata and permissions |
+| `utils/auth.js` | Token 存储与读取 |
+| `utils/env.js` | 环境与 API 配置 |
+| `utils/request.js` | 含拦截器的 HTTP 客户端 |
+| `utils/websocket.js` | 含重连逻辑的 WebSocket 客户端 |
+| `store/index.js` | 全局状态的 Vuex store |
+| `interceptor/routerInter.js` | 导航守卫 |
+| `pages.json` | 路由配置与分包 |
+| `manifest.json` | 应用元数据与权限 |
 
-## ⚙️ Build Configuration
+## ⚙️ 构建配置
 
-- **Entry**: `main.js`
+- **入口**: `main.js`
 - **HTML**: `index.html`
-- **Styles**: SCSS with uView theme
-- **Vue Version**: 2.x
-- **Sub-packages**: Enabled for code splitting
-- **Custom TabBar**: Enabled
+- **样式**: SCSS（使用 uView 主题）
+- **Vue 版本**: 2.x
+- **分包**: 已启用（代码分割）
+- **自定义 TabBar**: 已启用
 
-## 📦 Dependencies
-- `uview-ui@^2.0.38` - UI component library for uni-app
+## 📦 依赖项
+- `uview-ui@^2.0.38` - uni-app UI 组件库
 
-## 🤝 Contributing
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit changes: `git commit -m "Add feature"`
-4. Push to branch: `git push origin feature/your-feature`
-5. Submit a pull request
+## 🤝 贡献指南
+1. Fork 本仓库
+2. 创建功能分支：`git checkout -b feature/your-feature`
+3. 提交更改：`git commit -m "Add feature"`
+4. 推送分支：`git push origin feature/your-feature`
+5. 提交 Pull Request
 
-**Note**: Test across multiple platforms (iOS, Android, Mini Programs) before submitting PRs.
+**注意**：提交 PR 前请在多个平台（iOS、Android、小程序）上进行测试。
 
-## 📄 License
-ISC License
+## 📄 许可证
+ISC 许可证
 
-## 📞 Support
-For issues and questions, please open a GitHub issue or contact the development team.
+## 📞 支持
+如有问题或疑问，请在 GitHub 上提交 Issue 或联系开发团队。
 
 ---
 
-**Last Updated**: 2026-04-03** 09:18:50 **
-**Repository**: [joachimH-CC/pet-save](https://github.com/joachimH-CC/pet-save)
-**Maintained By**: joachimH-CC
+**最后更新**: 2026-04-03** 09:18:50 **
+**仓库地址**: [joachimH-CC/pet-save](https://github.com/joachimH-CC/pet-save)
+**维护者**: joachimH-CC
